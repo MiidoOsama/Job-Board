@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'job',
     'bootstrap4',
     'contact',
+    'django_filters',
     
 ]
 
@@ -128,6 +129,13 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+EMAIL_BACKEND= "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'mido.osama125@gmail.com'
+EMAIL_HOST_PASSWORD = 'uhsb aqbl tcpi svst'
+EMAIL_USE_TLS =True
+EMAIL_PORT = '587'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
