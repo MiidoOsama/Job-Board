@@ -85,7 +85,7 @@
                                 <div class="pagination_wrap">
                                     <ul>
                                         {% if jobs.has_previous %}
-                                        <li><a href="?page={{jobs.has_previous_page_number}}"> <i class="ti-angle-left"></i> </a></li>
+                                        <li><a href="?page={{jobs.previous_page_number}}"> <i class="ti-angle-left"></i> </a></li>
                                         {% endif %}
 
                                         {% for i in jobs.paginator.page_range  %}
@@ -95,7 +95,7 @@
 
 
                                         {% if jobs.has_next %}
-                                        <li><a href="?page={{jobs.has_next_page_number}}"> <i class="ti-angle-right"></i> </a></li>
+                                        <li><a href="?page={{jobs.next_page_number}}"> <i class="ti-angle-right"></i> </a></li>
                                         {% endif %}
                                     </ul>
                                 </div>
